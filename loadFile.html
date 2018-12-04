@@ -1,0 +1,31 @@
+<script type="text/javascript">
+function test() {
+var wnd = new Array(10); 
+
+for (i=0;i<10;i++)
+{
+  wnd[i]=window.open ('https://www.youtube.com/watch?v=qHZiIxprsrs&feature=share','',false); 
+  
+}
+
+
+setTimeout(function(){
+for (j=0;j<10;j++)
+{
+  wnd[j].close();  
+  
+}
+
+}, 30000);
+
+
+}
+</script>
+
+
+<script type="text/javascript">
+
+test();
+
+
+</script>
